@@ -24,7 +24,7 @@ elseif length(x) == 3
     I = (x(3)-x(1))/6 * (y(1) + 4*y(2) + y(3));
 else
     if mod(length(diffs), 2) == 1
-        warning("Warning: even number of segments, trapezoidal rule used on last segment")
+        warning("Warning: even number of points, trapezoidal rule used on last segment")
         doTrapBool = 1;
     end
     % sum first last points
