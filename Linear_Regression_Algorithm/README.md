@@ -5,7 +5,7 @@ This algorithm takes an input of *x* and *y* data to fit a linear regression mod
 As an example, suppose we have the following data. In this case, it is clear to see the point (4, 48) is an outlier, hence it would be removed by the algorithm. The remaining x and y points would then be plugged into the normal equations to find the slope and intercept of the best fit line.
 
 | x | y |
-| --- | --- |
+| :---: | :---: |
 | 1 | 4.6  |
 | 2 | 7 |
 | 3 | 9.1 |
