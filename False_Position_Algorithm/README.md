@@ -4,7 +4,7 @@ This algorithm uses the false position root finding method, which is a closed, c
 
 This algorithm will return the estimate of the root, the function evaluated at the root estimate, the approximate error of the root estimate, and the number of iterations to obtain the root estimate.
 
-As as example, suppose you are trying to find a root of the equation 0.4x^2 + 3x + 5. Observing the graph, one possible root lies at x = -5. Good initial bracket guesses would be xl = -6 and xu = -4. Suppose we want a stopping criterion of 0.05%, and a maximum of 10 iterations. In MATLAB, this would look like:
+As as example, suppose you are trying to find a root of the equation $f(x) = 0.4x^{2} + 3x + 5$. Observing the graph, one possible root lies at x = -5. Good initial bracket guesses would be xl = -6 and xu = -4. Suppose we want a stopping criterion of 0.05%, and a maximum of 10 iterations. In MATLAB, this would look like:
 
  ```
 >> [root, fx, ea, iter] = falsePosition(@(x) 0.4*x.^2 + 3*x + 5, -6, -4, 0.0005, 10)
